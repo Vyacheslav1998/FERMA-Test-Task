@@ -1,0 +1,279 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+/*----------------------------------Обнуление стилей CSS--------------------------------------*/
+
+.wrapper {
+	display: flex;
+	min-height: 100%;
+	overflow: hidden;
+	flex-direction: column;
+
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.76) 32.92%, rgba(255, 255, 255, 0.9) 59.51%, rgba(255, 255, 255, 0.87) 103.7%);
+	backdrop-filter: blur(58px);
+}
+
+.container{
+	max-width: 1440px;
+	padding: 0 26px 0 112px;
+}
+
+.logo{
+	margin: 76px 0 0 0;
+}
+
+.main_blocks{
+	display: flex;
+	flex: 0 0 50%;
+}
+
+.block1{
+	max-width: 540px;
+	padding: 71px 0 0 0;
+	margin: 0 65px 170px 0;
+}
+
+.main_text{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 45px;
+
+	letter-spacing: -0.41px;
+
+	color: #1F294A;
+	margin-bottom: 52px;
+}
+.list {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 31px;
+
+	letter-spacing: -0.41px;
+
+	color: #1F294A;
+
+	max-width: 509px;
+}
+   
+.list li:before{
+	content: '';
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+	vertical-align: middle;
+	border-radius:50%;
+	background-color:#000;
+	margin-right:10px;
+}
+
+.appStoreBtn{
+	margin: 41px 0 16px 0;
+}
+
+.block1_bot_text{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 31px;
+
+	letter-spacing: -0.41px;
+
+	color: rgba(31, 41, 74, 0.5);
+}
+
+.block2{
+	max-width: 733px;
+}
+
+.img_container{
+	max-width: 635px;
+	min-width: 250px;
+}
+
+.img_container img{
+	max-width: 100%;
+	max-height: 100%;
+	padding-top: 16px;
+}
+
+.footer{
+	position: relative;
+	display: flex;
+	flex: 0 0 50%;
+	max-width: 1440px;
+	height: 112px;
+}
+
+.footerText{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 31px;
+
+	letter-spacing: -0.41px;
+
+	color: #1F294A;
+}
+
+.links{
+	position: absolute;
+	left: 73.5%;
+	display: flex;
+	flex: 0 0 25%;
+}
+
+.navButton{
+	margin-right: 16px;
+}
+
+
+/* Large Devices, Wide Screens */
+@media (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media (max-width : 992px) {
+	.logo{
+		margin: 50px 0 0 60px;
+	}
+	.container{
+		max-width: 992px;
+		padding: 0;
+	}
+	.content{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.main_blocks{
+		justify-content: center;
+		flex-wrap: wrap-reverse;
+		flex-basis: 100%;
+	}
+	.block1{
+		padding: 25px 0 0 0;
+		margin: 0;
+	}
+	.appStore{
+		text-align: center;
+	}
+	.appStoreBtn{
+		margin: 30px 0 10px 0;
+	}
+	.footer{
+		text-align: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 559px;
+		min-width: 300px;
+		height: 120px;
+		margin: 40px 20px 0 20px;
+	}
+	.links{
+		position: static;
+		left: none;
+		display: flex;
+		flex: 0 0 25%;
+	}
+	.main_text{
+		font-size: calc(24px + 16 * (100vw / 1440));
+		line-height: 110%;
+		margin-bottom: 25px;
+	}
+	.list{
+		font-size: calc(14px + 16 * (100vw / 1440));
+		line-height: 110%;
+	}
+	.block1_bot_text{
+		font-size: calc(14px + 16 * (100vw / 1440));
+		line-height: 110%;
+	}
+	.footerText{
+		font-size: calc(14px + 16 * (100vw / 1440));
+		line-height: 110%;
+	}
+}
+
+/* Small Devices, Tablets */
+@media (max-width : 768px) {
+	.logo{
+		margin: 40px 0 0 50px;
+	}
+	.container{
+		max-width: 768px;
+	}
+	.main_blocks{
+		padding: 0 20px 0 20px;
+	}
+	.main_text{
+		margin-bottom: 20px;
+	}
+	.footer{
+		margin: 30px 0 0 0;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media (max-width : 480px) {
+	.logo{
+		margin: 30px 0 0 40px;
+	}
+	.container{
+		max-width: 480px;
+	}
+	.main_text{
+		margin-bottom: 15px;
+	}
+	.appStoreBtn{
+		margin: 20px 0 10px 0;
+	}
+	.footer{
+		margin: 25px 0 0 0;
+	}
+	.main_text{
+		line-height: 90%
+	}
+	.list{
+		line-height: 90%
+	}
+	.block1_bot_text{
+		line-height: 90%
+	}
+	.footerText{
+		line-height: 90%
+	}
+}
